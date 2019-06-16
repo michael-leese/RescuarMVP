@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Rescuar-Dashboard</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="/src/css/app.css">
+        <script src="https://kit.fontawesome.com/f94840c9b2.js"></script>
+        <link rel="manifest" href="/manifest.json">
+    </head>
+
+    <body>
+        <header>
+            <!--Navbar-->
+            <nav class="navbar navbar-light navbar-1 main-header">
+
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="/index.html">
+                    <img class="logo-nav" src="\src\images\ReacuarFullLogowebsite-350x152.png" alt="Rescuar Logo"></img>
+                    <h1>for People</h1>
+                </a>
+                <div class="navSignUp">
+                    <a class="navbar-toggler" href="/signuplogin.html">
+                        <i class="fas fa-user nav-signup-icon"></i>
+                    </a>
+                    <!-- Collapse button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"><span
+                            class="navbar-toggler-icon"></span></button>
+                </div>
+            </nav>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/dashboard.html">Dashboard <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/p_policy.html">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Links -->
+            <!-- Collapsible content -->
+            <!--/.Navbar-->
+        </header>
+        <article class="card" id="dashBoard">
+            <div class="card__image" id="icon">
+                <div class="card__person icon-person-dash"></div>
+                <div class="card__map icon-map-dash"></div>
+            </div>
+
+            <div class="contentPerson">
+                <h3>Your Childs Dashboard</h3>
+                <p>Billy Details:</p>
+                <ul>
+                    <li>Name: Billy Smith</li>
+                    <li>Age: 8</li>
+                    <li>Hair Colour: Red</li>
+                    <li>Spectrum Type: Autistic</li>
+                    <li>Likes: Water</li>
+                    <li>Approachable: Yes</li>
+                    <li>Gaurdians Tel: 07700 000000</li>
+                </ul>
+                <div class="pic-boy-dash"></div>
+            </div>
+            <div class="contentMap" id="missingMapCard">
+                <div id="missingBox">
+                    <h3>Missing Map</h3>
+                    <div class="missing-button-box">
+                        <div class="col justify-content-end">
+                            <p>Press <span class="missing-button red-writing" id="AlertMissing">HERE</span> to set
+                                Missing Notification <span id="missingOn-Off">ON!</span></p>
+                        </div>
+                        <div class="col justify-content-end">
+                            <i class="fa fa-exclamation-triangle red-writing" id="AlertIcon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="missingMap">
+                    <div class="map" id="map"></div>
+                </div>
+            </div>
+
+        </article>
+        <footer>
+            <div class="spectrum-image blur"></div>
+            <div class="spectrum-image"></div>
+        </footer>
+        <script src="/src/js/dash.js"></script>
+        <script src="/src/js/app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+            </script>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMSBI47x89t6fo3jmYZYfFuxJPfXCb5eM&callback=initMap"
+            async defer></script>
+    </body>
+
+</html>

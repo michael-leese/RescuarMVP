@@ -1,0 +1,550 @@
+html {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "Raleway", sans-serif;
+  background-color: #cccccc42;
+}
+
+.center-load-icon{
+  display: flex;
+  height: 80vh;
+  justify-content:center;
+  align-items: center;
+  }
+
+.loader-icon {
+  border: 16px solid #05a5007c;
+  border-radius: 50%;
+  border-top: 16px solid #c42215;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  -webkit-animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  -o-animation: spin 2s linear infinite;
+  
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@-o-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+/*------------------------------- colors used */
+
+.red-writing {
+  color: #c42215;
+}
+
+.green-writing {
+  color: #06a500;
+}
+
+/*-------------------------------cross page images-*/
+
+.spectrum-image {
+  margin: 0;
+  padding-right: 0;
+  padding-left: 0;
+  position: fixed;
+  bottom: -3px;
+  left: -8px;
+  height: 50px;
+  width: 110%;
+  background-image: linear-gradient(to top, rgba(241, 241, 241, 0), #cccccc), url(../images/flatspectrum.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blur {
+  filter: blur(2px);
+  z-index: 3;
+}
+
+/*----------------------------------------animation keyframes--*/
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*-------------------------------navbar-------*/
+
+.navbar {
+  flex-wrap: nowrap
+}
+
+.main-header {
+  display: flex;
+  width: 100%;
+  height: 5%;
+  padding: 5px;
+  background-color: #06a500;
+}
+
+.navbar-brand {
+  display: inline-flex;
+  align-items: flex-end;
+}
+
+.logo-nav {
+  border-radius: 20px;
+  padding-right: 1%;
+  width: 30%
+}
+
+.main-header h1 {
+  font-size: 1em;
+  margin: 0;
+  color: #c42215;
+  padding-bottom: 0.5%;
+}
+
+.navbar .navbar-toggler-icon {
+  background-image: url('https://mdbootstrap.com/img/svg/hamburger8.svg?color=E3005C');
+}
+
+.navbar-toggler {
+  padding: 0.25em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: .25em;
+}
+
+.navSignUp {
+  display: flex;
+}
+
+.nav-signup-icon {
+  display: inline-block;
+  font-size: 1.25em;
+  color: #c42215;
+}
+
+.navbar-nav .nav-link {
+  padding: 0 1% 0 0;
+  text-align: right;
+  color: #c42215ad;
+}
+
+.navbar-nav .nav-link:hover {
+  padding: 0 1% 0 0;
+  text-align: right;
+  color: #fff;
+}
+
+.navbar-collapse {
+  background-color: #06a500;
+}
+
+/*-------------------------------------------home----------*/
+
+.home-card {
+  width: 90%;
+  max-width: 800px;
+  margin: 16px auto 70px auto;
+  cursor: pointer;
+}
+
+.home-content {
+  text-align: center;
+  font-weight: 600;
+}
+
+.pic-lost-home {
+  margin: auto;
+  margin-bottom: 16px;
+  height: 150px;
+  width: 150px;
+  background-image: url("../images/www.maxpixel.net-Alone-Lost-Kid-Park-Emotions-Guy-Child-Crying-1735221.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.pic-happy-home {
+  margin: auto;
+  height: 150px;
+  width: 150px;
+  background-image: url("../images/laughter-2457322_640.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -66px;
+  border-radius: 50%;
+}
+
+/*-----------------------------------------signup/login------------*/
+
+.signup-card, .login-card {
+  transition: opacity 0.3s ease-out;
+}
+
+.signup-card {
+  display: block;
+  width: 90%;
+  max-width: 800px;
+  margin: 16px auto 70px auto;
+  cursor: pointer;
+}
+
+.signlogTitle {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.switchScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  font-size: 2em;
+}
+
+.signupHead, .loginHead {
+  transition: opacity 0.3s ease-out;
+}
+
+.signupHead {
+  display: block;
+}
+
+.loginHead {
+  display: none;
+}
+
+.modal-header {
+  padding: 0.5em 0.5em;
+}
+
+.col-form-label {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.custom-file-label {
+  padding: 0;
+  padding-left: 0.75em;
+}
+
+.required-text {
+  margin-bottom: 0;
+  font-size: 1em;
+}
+
+.required-star {
+  font-size: 1.5em;
+}
+
+.login-card {
+  display: none;
+  width: 90%;
+  max-width: 800px;
+  margin: 16px auto 70px auto;
+  cursor: pointer;
+}
+
+.loginHead {
+  display: none;
+  opacity: 0;
+}
+
+.submitRow {
+  display: flex;
+  width: 100%;
+}
+
+/*-----------------------------------------dashboard-----------*/
+
+.card {
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #ccc;
+  width: 90%;
+  height: 70%;
+  max-width: 800px;
+  margin: 36px auto auto auto;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.icon-map-dash {
+  margin: auto;
+  height: 150px;
+  width: 150px;
+  background-image: url("../images/map-icon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.icon-person-dash {
+  margin: auto;
+  height: 150px;
+  width: 150px;
+  background-image: url("../images/person-icon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.card__person, .card__map {
+  padding: 0 5%;
+  transition: opacity 0.3s ease-out;
+}
+
+.card__map {
+  display: none;
+  opacity: 0;
+}
+
+.contentPerson, .contentMap {
+  padding: 0 5%;
+  transition: opacity 0.3s ease-out;
+}
+
+.contentPerson h3, .contentMap {
+  text-align: center;
+}
+
+.pic-boy-dash {
+  margin: auto;
+  height: 150px;
+  width: 150px;
+  background-image: url("../images/red-hair-boy-8-yr-Sq.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.contentMap {
+  display: none;
+  opacity: 0;
+}
+
+.missing-button-box {
+  display: flex;
+}
+
+.missing-button:hover {
+  background-color: #06a500;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 0.2em;
+  padding: 0.2em;
+}
+
+#AlertIcon {
+  display: none;
+  font-size: 2em;
+}
+
+.blinkMissing {
+  animation: blink 1s;
+  animation-iteration-count: infinite;
+  -webkit-animation: blink 1s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation: blink 1s;
+  -moz-animation-iteration-count: infinite;
+  -o-animation: blink 1s;
+  -o-animation-iteration-count: infinite;
+}
+
+.missingMap {
+  display: block;
+}
+
+.map {
+  position: absolute !important;
+}
+
+.map:first-child {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  margin: 0;
+  overflow: hidden;
+  width: 90%;
+  height: 52%;
+}
+.gm-svpc{
+  display:none !important;
+}
+.gmnoprint{
+  display:none !important;
+}
+
+/*-----------------------------------------privacy policy-------*/
+
+.privacy-policy {
+  padding: 2%;
+  padding-bottom: 50px;
+}
+
+.privacy-policy h5 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.privacy-policy h6 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+span.email {
+  font-style: italic;
+}
+
+/*------------------------------------------media queries--*/
+
+@media screen and (max-width: 250px) {
+  .switchScreen {
+    top: 9%;
+    right: 5%;
+    font-size: 1.25em;
+  }
+}
+
+@media screen and (min-width: 251px) and (max-width: 299px) {
+  .logo-nav {
+    width: 50%;
+    border-radius: 10px;
+  }
+  .main-header h1 {
+    font-size: 0.75em;
+    padding-bottom: 0%;
+  }
+  .navbar-toggler {
+    padding: 0;
+    width: 40px;
+    height: 26px;
+  }
+  .nav-signup-icon {
+    font-size: 1em;
+  }
+  .navbar-toggler-icon {
+    display: inline-flex;
+    width: 1em;
+    height: 1em;
+    vertical-align: bottom;
+  }
+  .switchScreen {
+    top: 10%;
+    right: 5%;
+    font-size: 1.25em;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 375px) {
+  .logo-nav {
+    border-radius: 10px;
+  }
+  .main-header h1 {
+    font-size: 0.75em;
+    padding-bottom: 0;
+  }
+  .navbar-toggler {
+    padding: 0;
+    width: 40px;
+    height: 26px;
+  }
+  .nav-signup-icon {
+    font-size: 1em;
+  }
+  .navbar-toggler-icon {
+    display: inline-flex;
+    width: 1em;
+    height: 1em;
+    vertical-align: bottom;
+  }
+  .pic-boy-dash{
+    height:110px;
+    width: 110px;
+  }
+  .switchScreen {
+    top: 11%;
+    right: 5%;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width:376px) and (max-width: 450px) {
+  .switchScreen {
+    top: 13%;
+    right: 5%;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .logo-nav {
+    border-radius: 10px;
+  }
+  .main-header h1 {
+    font-size: 0.75em;
+    padding-bottom: 0;
+  }
+}

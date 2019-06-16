@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rescuar-Sign/Log</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/app.css">
+    <script src="https://kit.fontawesome.com/f94840c9b2.js"></script>
+    <link rel="manifest" href="/manifest.json">
+  </head>
+
+  <body>
+    <header>
+      <!--Navbar-->
+      <nav class="navbar navbar-light navbar-1 main-header">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="/index.html">
+          <img class="logo-nav" src="\src\images\ReacuarFullLogowebsite-350x152.png" alt="Rescuar Logo"></img>
+          <h1>for People</h1>
+        </a>
+      </nav>
+      <!--/.Navbar-->
+    </header>
+    <article id="signuplogin">
+      <div class="signlogTitle">
+        <div>
+          <h1 class="signupHead red-writing">Sign Up</h1>
+          <h1 class="loginHead red-writing">Log In</h1>
+        </div>
+        <div class="switchScreen">
+          <i class="fas fa-redo-alt red-writing" id="switch-sign-log-screen"></i>
+        </div>
+      </div>
+      <div class="signup-card">
+        <form action="/dashboard.html">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="firstInputPassword" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Repeat Password</label>
+            <input type="password" class="form-control" id="copyInputPassword" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#detailsModal">Personal Info
+              Details</button>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="termsAgree">
+              <label class="form-check-label" for="termsAgree">
+                Agree to <a href="/p_policy.html">terms and conditions</a>
+              </label>
+            </div>
+            <br>
+            <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <div>
+                      <h5 class="modal-title red-writing" id="exampleModalLabel">Gaurdian/Dependant Information</h5>
+                      <span class="required-text"><span class="red-writing required-star">*</span>Required
+                        Field.</span>
+                    </div>
+                    <button type="button" class="close red-writing" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label class="col-form-label red-writing">Gaurdian Details:</label>
+                        <div>
+                          <label for="gaurdian-name" class="col-form-label">First Name<span
+                              class="red-writing required-star">*</span>:</label>
+                          <input type="text" class="form-control" id="gaurdian-name" placeholder="Gaurdian First Name"
+                            size="30">
+                          <label for="gaurdian-lastname" class="col-form-label">Last Name<span
+                              class="red-writing required-star">*</span>:</label>
+                          <input type="text" class="form-control" id="gaurdian-lastname"
+                            placeholder="Gaurdian Last Name" size="30">
+                        </div>
+                        <div class="form-group">
+                          <label for="relationship" class="col-form-label">Relationship<span
+                              class="red-writing required-star">*</span>:</label>
+                          <input type="text" class="form-control" id="relationship" placeholder="E.g Mother/Carer"
+                            size="15">
+                        </div>
+                        <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Gaurdian Telephone<span
+                              class="red-writing required-star">*</span>:</label>
+                          <input type="tel" class="form-control" id="gaurdian-phone" placeholder="E.g 0700 000000"
+                            size="15">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-form-label red-writing">Dependant Details:</label>
+                        <div>
+                          <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Dependant Name<span
+                                class="red-writing required-star">*</span>:</label>
+                            <input type="text" class="form-control" id="dependant-name" placeholder="E.g Billy Smith"
+                              size="40">
+                          </div>
+                          <div class="form-group" oninput="dependantAge.value=parseInt(dependantAgeRange.value)">
+                            <div>
+                              <label for="dependant-ageRange">Dependant Age<span
+                                  class="red-writing required-star">*</span></label>
+                              <input type="range" class="custom-range" min="1" max="100" id="dependantAgeRange">
+                            </div>
+                            <div>
+                              <output id="dependantAge" name="age" for="dependant-ageRange"
+                                placeholder="Age">Age?</output>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="message-text" class="col-form-label">Hair Colour<span
+                                class="red-writing required-star">*</span>:</label>
+                            <input type="text" class="form-control" id="message-text" placeholder="E.g Red"
+                              size="10"></input>
+                          </div>
+                          <div class="form-group">
+                            <label for="spectrum-type" class="col-form-label">Spectrum Type<span
+                                class="red-writing required-star">*</span>:</label>
+                            <input type="text" class="form-control" id="spectrum-type" placeholder="E.g Autism"
+                              size="20"></input>
+                          </div>
+                          <div class="form-group">
+                            <label for="attracted-to" class="col-form-label">Attracted to<span
+                                class="red-writing required-star">*</span>:</label>
+                            <input type="text" class="form-control" id="attracted-to" placeholder="E.g Water"
+                              size="30"></input>
+                          </div>
+                          <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="customCheck1">
+                              <label class="custom-control-label" for="customCheck1">Check if Approachable<span
+                                  class="red-writing required-star">*</span></label>
+                            </div>
+                            <br>
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" id="customFile">
+                              <label class="custom-file-label" for="customFile"><span
+                                  class="red-writing required-star">*</span></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="btnResetForm">Reset</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Save Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="submitRow justify-content-end">
+              <button type="submit" class="btn btn-danger">Submit</button>
+            </div>
+        </form>
+      </div>
+      </div>
+
+      <div class="login-card">
+        <form action="/dashboard.html">
+          <div class="form-group">
+            <label for="loginEmail">Email address</label>
+            <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp"
+              placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="loginRemember">
+            <label class="form-check-label" for="loginRemember">Remember Me</label>
+          </div>
+          <div class="submitRow justify-content-end">
+            <button type="submit" class="btn btn-danger">Submit</button>
+          </div>
+        </form>
+      </div>
+    </article>
+    <footer>
+      <div class="spectrum-image blur"></div>
+      <div class="spectrum-image"></div>
+    </footer>
+
+    <script src="/src/js/app.js"></script>
+    <script src="/src/js/signup.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+  </body>
+
+</html>
