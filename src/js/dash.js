@@ -69,9 +69,10 @@ missingBtn.addEventListener('click', function (event) {
 
 //-------------------------------------------- MAP SCRIPT
 var map;
+var pos = {lat: 51.2111975, lng: -1.4919233};
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
-        center: { lat: 51.21135, lng: -1.478350 },
+        center: pos,
         zoom: 15
     });
 
@@ -80,7 +81,7 @@ function initMap() {
     // Try HTML5 geolocation.
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function(position) {
-        var pos = {
+        pos = {
           lat: position.coords.latitude,
           lng: position.coords.longitude
         };
@@ -97,17 +98,13 @@ function initMap() {
       handleLocationError(false, infoWindow, map.getCenter());
     }
 
-    // Create an array of alphabetical characters used to label the markers.
-    var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-
     // Add some markers to the map.
     // Note: The code uses the JavaScript Array.prototype.map() method to
     // create an array of markers based on a given "locations" array.
     // The map() method here has nothing to do with the Google Maps API.
     var markers = locations.map(function (location, i) {
         return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length]
+            position: location
         });
     });
 
@@ -116,26 +113,28 @@ function initMap() {
         { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
 }
 var locations = [
-    { lat: 51.199320, lng: -1.479350 },
-    { lat: 51.209820, lng: -1.478450 },
-    { lat: 51.218720, lng: -1.46650 },
-    // { lat: -33.848588, lng: 151.209834 },
-    // { lat: -33.851702, lng: 151.216968 },
-    // { lat: -34.671264, lng: 150.863657 },
-    // { lat: -35.304724, lng: 148.662905 },
-    // { lat: -36.817685, lng: 175.699196 },
-    // { lat: -36.828611, lng: 175.790222 },
-    // { lat: -37.750000, lng: 145.116667 },
-    // { lat: -37.759859, lng: 145.128708 },
-    // { lat: -37.765015, lng: 145.133858 },
-    // { lat: -37.770104, lng: 145.143299 },
-    // { lat: -37.773700, lng: 145.145187 },
-    // { lat: -37.774785, lng: 145.137978 },
-    // { lat: -37.819616, lng: 144.968119 },
-    // { lat: -38.330766, lng: 144.695692 },
-    // { lat: -39.927193, lng: 175.053218 },
-    // { lat: -41.330162, lng: 174.865694 },
-    // { lat: -42.734358, lng: 147.439506 },
+    // Palmer Building Dummy Locations
+    { lat: 51.440841, lng: -0.946079 },
+    { lat: 51.441722, lng: -0.945599 },
+    { lat: 51.442056, lng: -0.941372 },
+    { lat: 51.440317, lng: -0.941715 },
+    { lat: 51.440384, lng: -0.944011 },
+    { lat: 51.439234, lng: -0.945256 },
+    { lat: 51.440919, lng: -0.944548 },
+    { lat: 51.442484, lng: -0.944226 },
+    { lat: 51.441304, lng: -0.950637 },
+    { lat: 51.441981, lng: -0.943371 },
+    // Andover Dummy Locations
+    { lat: 51.228516, lng: -1.466152 },
+    { lat: 51.222933, lng: -1.471060 },
+    { lat: 51.227845, lng: -1.476652 },
+    { lat: 51.228524, lng: -1.467316 },
+    { lat: 51.221883, lng: -1.475561 },
+    { lat: 51.221306, lng: -1.470197 },
+    { lat: 51.223416, lng: -1.460874 },
+    { lat: 51.225183, lng: -1.462730 },
+    { lat: 51.228966, lng: -1.468002 },
+    { lat: 51.230453, lng: -1.467034 },
     // { lat: -42.734358, lng: 147.501315 },
     // { lat: -42.735258, lng: 147.438000 },
     // { lat: -43.999792, lng: 170.463352 }
