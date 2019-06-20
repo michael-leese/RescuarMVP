@@ -491,6 +491,7 @@ span.email {
   .pic-happy-home {
     height: 110px;
     width: 110px;
+    background-position-x: -47px;
   }
   .card {
     height: 84%;
@@ -538,6 +539,7 @@ span.email {
   .pic-happy-home {
     height: 110px;
     width: 110px;
+    background-position-x: -47px;
   }
   .switchScreen {
     top: 10%;
@@ -578,6 +580,7 @@ span.email {
   .pic-happy-home {
     height: 110px;
     width: 110px;
+    background-position-x: -47px;
   }
   .pic-boy-dash {
     height: 110px;
