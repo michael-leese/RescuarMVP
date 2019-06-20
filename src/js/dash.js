@@ -17,6 +17,8 @@ iconCard.addEventListener('click', function (event) {
             iconMap.style.opacity = 1;
         }, 300);
         dashPerson.style.opacity = 0;
+        $('#dashBoard').removeClass('person-card-fix');
+        $('#dashBoard').addClass('map-fix');
         dashMap.style.display = 'block';
         dashPerson.style.display = 'none';
         setTimeout(function () {
@@ -32,6 +34,8 @@ iconCard.addEventListener('click', function (event) {
         }, 300);
         dashMap.style.opacity = 0;
         dashPerson.style.display = 'block';
+        $('#dashBoard').removeClass('map-fix');
+        $('#dashBoard').addClass('person-card-fix');
         dashMap.style.display = 'none';
         setTimeout(function () {
             dashPerson.style.opacity = 1;
