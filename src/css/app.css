@@ -401,6 +401,10 @@ body {
   opacity: 0;
 }
 
+.missing-notification {
+  margin: 0;
+}
+
 .missing-button-box {
   display: flex;
 }
@@ -447,12 +451,13 @@ body {
   height: 52%;
 }
 
-.map-fix{
+.map-fix {
   height: 70%;
 }
 
-.person-card-fix{
+.person-card-fix {
   height: fit-content;
+  padding-bottom: 30px;
 }
 
 .gm-svpc {
@@ -499,7 +504,7 @@ span.email {
     width: 110px;
     background-position-x: -47px;
   }
-  .map-fix{
+  .map-fix {
     height: 84%;
   }
   .switchScreen {
@@ -510,7 +515,7 @@ span.email {
 }
 
 @media screen and (min-width: 251px) and (max-width: 299px) {
-  .map-fix{
+  .map-fix {
     height: 84%;
   }
   .map:first-child {
