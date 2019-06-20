@@ -521,7 +521,7 @@ span.email {
     vertical-align: bottom;
   }
   .home-card {
-    padding-bottom: 20px;
+    padding-bottom: 60px;
   }
   .switchScreen {
     top: 10%;
@@ -553,7 +553,7 @@ span.email {
     vertical-align: bottom;
   }
   .home-card {
-    padding-bottom: 10px;
+    padding-bottom: 40px;
   }
   .pic-boy-dash {
     height: 110px;
@@ -572,6 +572,7 @@ span.email {
 @media screen and (min-width:376px) and (max-width: 450px) {
   .card {
     height: 77%;
+    padding-bottom: 60px;
   }
   .switchScreen {
     top: 13%;
