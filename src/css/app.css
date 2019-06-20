@@ -9,12 +9,12 @@ body {
   background-color: #cccccc42;
 }
 
-.center-load-icon{
+.center-load-icon {
   display: flex;
   height: 80vh;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  }
+}
 
 .loader-icon {
   border: 16px solid #05a5007c;
@@ -26,25 +26,42 @@ body {
   -webkit-animation: spin 2s linear infinite;
   -moz-animation: spin 2s linear infinite;
   -o-animation: spin 2s linear infinite;
-  
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
+
 @-moz-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
+
 @-o-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 /*------------------------------- colors used */
@@ -79,6 +96,7 @@ body {
 }
 
 /*----------------------------------------animation keyframes--*/
+
 @keyframes blink {
   0% {
     opacity: 1;
@@ -430,11 +448,13 @@ body {
   width: 90%;
   height: 52%;
 }
-.gm-svpc{
-  display:none !important;
+
+.gm-svpc {
+  display: none !important;
 }
-.gmnoprint{
-  display:none !important;
+
+.gmnoprint {
+  display: none !important;
 }
 
 /*-----------------------------------------privacy policy-------*/
@@ -461,6 +481,9 @@ span.email {
 /*------------------------------------------media queries--*/
 
 @media screen and (max-width: 250px) {
+  .home-card {
+    padding-bottom: 20px;
+  }
   .card {
     height: 84%;
   }
@@ -472,11 +495,9 @@ span.email {
 }
 
 @media screen and (min-width: 251px) and (max-width: 299px) {
-  
-.card {
-  height: 84%;
-}
-  
+  .card {
+    height: 84%;
+  }
   .logo-nav {
     width: 50%;
     border-radius: 10px;
@@ -498,6 +519,9 @@ span.email {
     width: 1em;
     height: 1em;
     vertical-align: bottom;
+  }
+  .home-card {
+    padding-bottom: 20px;
   }
   .switchScreen {
     top: 10%;
@@ -528,11 +552,11 @@ span.email {
     height: 1em;
     vertical-align: bottom;
   }
-  .home-card{
-    margin: 16px auto 80px auto;
+  .home-card {
+    padding-bottom: 10px;
   }
-  .pic-boy-dash{
-    height:110px;
+  .pic-boy-dash {
+    height: 110px;
     width: 110px;
   }
   .card {
