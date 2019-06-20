@@ -69,7 +69,7 @@ missingBtn.addEventListener('click', function (event) {
 
 //-------------------------------------------- MAP SCRIPT
 var map;
-var pos = {lat: 51.4194920, lng: -0.9680560};
+var pos = {lat: 51.441433, lng: -0.944295};
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: pos,
