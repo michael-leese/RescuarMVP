@@ -484,6 +484,14 @@ span.email {
   .home-card {
     padding-bottom: 20px;
   }
+  .pic-lost-home {
+    height: 110px;
+    width: 110px;
+  }
+  .pic-happy-home {
+    height: 110px;
+    width: 110px;
+  }
   .card {
     height: 84%;
   }
@@ -523,6 +531,14 @@ span.email {
   .home-card {
     padding-bottom: 60px;
   }
+  .pic-lost-home {
+    height: 110px;
+    width: 110px;
+  }
+  .pic-happy-home {
+    height: 110px;
+    width: 110px;
+  }
   .switchScreen {
     top: 10%;
     right: 5%;
@@ -554,6 +570,14 @@ span.email {
   }
   .home-card {
     padding-bottom: 40px;
+  }
+  .pic-lost-home {
+    height: 110px;
+    width: 110px;
+  }
+  .pic-happy-home {
+    height: 110px;
+    width: 110px;
   }
   .pic-boy-dash {
     height: 110px;
