@@ -461,6 +461,9 @@ span.email {
 /*------------------------------------------media queries--*/
 
 @media screen and (max-width: 250px) {
+  .card {
+    height: 84%;
+  }
   .switchScreen {
     top: 9%;
     right: 5%;
@@ -469,6 +472,11 @@ span.email {
 }
 
 @media screen and (min-width: 251px) and (max-width: 299px) {
+  
+.card {
+  height: 84%;
+}
+  
   .logo-nav {
     width: 50%;
     border-radius: 10px;
@@ -520,9 +528,15 @@ span.email {
     height: 1em;
     vertical-align: bottom;
   }
+  .home-card{
+    margin: 16px auto 80px auto;
+  }
   .pic-boy-dash{
     height:110px;
     width: 110px;
+  }
+  .card {
+    height: 80%;
   }
   .switchScreen {
     top: 11%;
@@ -532,6 +546,9 @@ span.email {
 }
 
 @media screen and (min-width:376px) and (max-width: 450px) {
+  .card {
+    height: 77%;
+  }
   .switchScreen {
     top: 13%;
     right: 5%;
