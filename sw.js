@@ -22,8 +22,7 @@ self.addEventListener('install', function (event) {
                 '/src/images/www.maxpixel.net-Alone-Lost-Kid-Park-Emotions-Guy-Child-Crying-1735221.png',
                 'https://fonts.googleapis.com/css?family=Raleway:400,700',
                 'https://kit.fontawesome.com/f94840c9b2.js',
-                'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js',
-                'https://maps.googleapis.com/maps/api/js?key=AIzaSyAMSBI47x89t6fo3jmYZYfFuxJPfXCb5eM&callback=initMap'
+                'https://kit-free.fontawesome.com/releases/latest/css/free.min.css'
 
             ]);
         })

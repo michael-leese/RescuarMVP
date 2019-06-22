@@ -3,27 +3,27 @@
     "short name": "Rescuar",
     "start_url": ".",
     "display": "standalone",
-    "orientation": "portait",
+    "orientation": "portrait",
     "background_color": "#c42215",
     "theme_color": "#06a500",
     "icons": [
         {
-            "src": "/src/images/icons/rescuar-icon-96x96.png",
+            "src": "src/images/icons/rescuar-icon-96x96.png",
             "sizes": "96x96",
             "type": "image/png"
         },
         {
-            "src": "/src/images/icons/rescuar-icon-144x144.png",
+            "src": "src/images/icons/rescuar-icon-144x144.png",
             "sizes": "144x144",
             "type": "image/png"
         },
         {
-            "src": "/src/images/icons/rescuar-icon-256x256.png",
+            "src": "src/images/icons/rescuar-icon-256x256.png",
             "sizes": "256x256",
             "type": "image/png"
         },
         {
-            "src": "/src/images/icons/rescuar-icon-512x512.png",
+            "src": "src/images/icons/rescuar-icon-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }

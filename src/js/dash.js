@@ -74,7 +74,17 @@ missingBtn.addEventListener('click', function (event) {
 //-------------------------------------------- MAP SCRIPT
 var map;
 var pos = {lat: 51.441433, lng: -0.944295};
-function initMap() {
+
+window.addEventListener('load', function(e) {
+    if (navigator.onLine) {
+      console.log('We\'re online!');
+    } else {
+      console.log('We\'re offline...');
+      $('#map').append('<p>Must be Online to activate the Location Map!</p>');
+    }
+  }, false);
+
+  function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: pos,
         zoom: 15
@@ -116,6 +126,7 @@ function initMap() {
     var markerCluster = new MarkerClusterer(map, markers,
         { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
 }
+
 var locations = [
     // Palmer Building Dummy Locations
     { lat: 51.440841, lng: -0.946079 },
